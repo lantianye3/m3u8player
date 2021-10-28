@@ -1,0 +1,124 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>M3u8 player_M3u8 ניתוח מקוון_FLV הפעלה מקוונת 【HLS PLAYER】</title>
+    <meta name="keywords" content="הפעלה מקוונת M3u8, ניתוח מקוון m3u8, נגן מקוון mp4, נגן מקוון FLV, נגן M3u8">
+    <meta name="Description" content="נגן M3u8 נגן M3u8 הוא נגן מדיה הזרמת רשת שנועד במיוחד לפתור הפעלה מקוונת של קבצי m3u8. הנגן המקוון m3u8 יכול לממש ניתוח, בדיקה והפעלה של m3u8 מקוונים של קבצי m3u8, קבצי וידאו FLV וקובצי מדיה MP4. ישנה גם שיטת העברה ל- Mp4 לשיתוף, נגן m3u8 נכנס לכתובת m3u8 או לכתובת המקור החי כדי לצפות בסרטון באינטרנט。">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.css" />
+    <link rel="stylesheet" href="chrome.css" />
+    <meta property="og:image" content="wbq.jpg" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <meta name="google-site-verification" content="UcJoHfQKwQ7i4XPm--fDgq6wgF6KeotlCeOsbzq9RL4" />
+    <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+    <script>
+        LA.init({
+            id: "JHJpFrzkOuL71gX8",
+            ck: "JHJpFrzkOuL71gX8"
+        })
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CEY0YVRXJK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-CEY0YVRXJK');
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-default-change">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">M3u8 online player</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+                <a class="navbar-brand" href="/" title="M3u8 player"><img src="lantianye3.png" alt="M3u8 online player"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://m3u8player.lantianye3.top/">m3u8 player</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="col-sm-12 chrome-artical">
+                    <div id="dplayer" style="height:641px;"></div>
+                    <div class="play-player" style="text-align:center;"><input placeholder="הזן את כתובת M3U8, MP4, FLV שלך" type="text" id="dizhi" class="form-control" style="min-width: 50%;width: 60%;"><button id="play" class="btn btn-success">לְשַׂחֵק</button></div>
+                </div>
+        </div></div>
+    </div>
+    <div class="container-fluid footer" style="padding-top: 10px;padding-bottom: 0px;margin-top:5px;">
+        <div class="row">
+            <div class="col-sm-12">
+                <p><a href="/" target="_blank">שחקן מקוון M3u8-פלייב מקוון-משחק מקוון Mp4</a><br> Copyright &copy 2021 Online M3u8 Player <br></p>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js/dist/hls.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flv.js/dist/flv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js"></script>
+    <script src="https://m3u8player.lantianye3.top/js/common.js"></script>
+    <script>
+        var links = window.location.href;
+        if(links!="https://m3u8player.lantianye3.top/il.html"){
+            window.location.href = "https://m3u8player.lantianye3.top/il.html"
+        }
+        const dp = new DPlayer({
+            container: document.getElementById('dplayer'),
+            video: {
+                url: 'kr.mp4',
+                pic: 'wbq.jpg'
+            },
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $("#play").click(function() {
+                var m3u8 = $("#dizhi").val();
+                $("#dizhi").val("");
+                if (m3u8.indexOf(".flv") != -1) {
+                    const dp = new DPlayer({
+                        container: document.getElementById('dplayer'),
+                        video: {
+                            url: m3u8,
+                            type: 'flv',
+                        }
+                    });
+                } else if (m3u8.indexOf(".m3u8") != -1) {
+                    const dp = new DPlayer({
+                        container: document.getElementById('dplayer'),
+                        video: {
+                            url: m3u8
+                        },
+                    });
+                } else if (m3u8.indexOf(".mp4") != -1) {
+                    const dp = new DPlayer({
+                        container: document.getElementById('dplayer'),
+                        video: {
+                            url: m3u8
+                        },
+                    });
+                } else {
+                    alert("אנא הזן את כתובת האתר הנכונה");
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap:https://m3u8player.lantianye3.top/sitemap.xml
